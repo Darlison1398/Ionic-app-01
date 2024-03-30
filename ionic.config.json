@@ -1,0 +1,7 @@
+{
+  "name": "Bloco-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
