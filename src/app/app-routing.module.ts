@@ -15,6 +15,18 @@ const routes: Routes = [
     path: 'tela-inicial',
     loadChildren: () => import('./tela-inicial/tela-inicial.module').then( m => m.TelaInicialPageModule)
   },
+  {
+    path: 'cadastro-disciplinas',
+    loadChildren: () => import('./cadastro-disciplinas/cadastro-disciplinas.module').then( m => m.CadastroDisciplinasPageModule)
+  },
+  {
+    path: 'disciplinas',
+    loadChildren: () => import('./disciplinas/disciplinas.module').then( m => m.DisciplinasPageModule)
+  },
+  {
+    path: 'perfil',
+    loadChildren: () => import('./perfil/perfil.module').then( m => m.PerfilPageModule)
+  },
  /* {
     path: '',
     redirectTo: 'home',

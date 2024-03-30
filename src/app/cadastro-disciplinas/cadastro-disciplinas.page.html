@@ -1,0 +1,39 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastrar Matérias</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="container">
+    <ion-button routerLink="/tela-inicial">Página inicial</ion-button><br>
+    <h3>Cadastre as matérias que você deseja cursar esse semestre</h3>
+    <br><br>
+
+    <h4>Digite o seu nome</h4>
+    <ion-input type="text" [(ngModel)]="nome"></ion-input><br><br>
+
+    <h4>Selecione o semestre</h4>
+    <ion-item>
+      <ion-select label="Semestre" [(ngModel)]="semestre" placeholder="Selecionar">
+        <ion-select-option value="1° semestre">1° semestre</ion-select-option>
+        <ion-select-option value="2° semestre">2° semestre</ion-select-option>
+        <ion-select-option value="3° semestre">3° semestre</ion-select-option>
+        <ion-select-option value="4° semestre">4° semestre</ion-select-option>
+        <ion-select-option value="5° semestre">5° semestre</ion-select-option>
+        <ion-select-option value="6° semestre">6° semestre</ion-select-option>
+      </ion-select>
+    </ion-item><br><br><br>
+
+    <h4>Selecione as matérias</h4>
+    <ion-item *ngFor="let item of temas">
+      <ion-label> {{ item.tema }} </ion-label>
+      <ion-checkbox slot="end" [(ngModel)]="item.isChecked"></ion-checkbox>
+    </ion-item>
+    <br><br> 
+
+
+    <ion-button expand="block" (click)="cadastrar()">Cadastrar</ion-button> 
+ 
+  </div>
+</ion-content>
