@@ -1,13 +1,25 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title> Bem-vindo ao seu perfil</ion-title>
+    <ion-title>Perfil Pessoal</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="container">
-    <h3>Seu perfil pessoal</h3>
+    <ion-button routerLink="/tela-inicial">Página inicial</ion-button><br><br><br>
     
-    <ion-button routerLink="/tela-inicial">Página inicial</ion-button>
+    <img src="../../assets/icon/R.png" alt="" srcset="">
+
+    <div>
+      <h2><strong>Nome:</strong> {{ dadosFormulario?.nome }}</h2>
+      <h3><strong>Semestre:</strong> {{ dadosFormulario?.semestre }}</h3>
+      <h4><strong>Matérias Selecionadas:</strong></h4>
+      <ul>
+        <li *ngFor="let materia of dadosFormulario?.materiasSelecionadas">{{ materia }}</li>
+      </ul>
+    </div>
+
+
+    
   </div>
 </ion-content>

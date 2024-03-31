@@ -22,6 +22,8 @@ export class LoginPage  {
 
     } else {
       this.presentToast('dandos inocorretos', 'danger')
+      this.email = '';
+      this.senha = '';
     }
   }
 

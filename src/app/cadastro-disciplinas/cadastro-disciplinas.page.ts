@@ -1,3 +1,4 @@
+import { state } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
@@ -52,8 +53,14 @@ export class CadastroDisciplinasPage implements OnInit {
       this.materiasSelecionadas = this.temas.filter(item => item.isChecked).map(item => item.tema);
       this.dadosFormulario.materiasSelecionadas = this.materiasSelecionadas;
   
-      this.router.navigateByUrl('/tela-inicial');
+      //console.log(this.dadosFormulario);
+      this.router.navigateByUrl('/perfil',  { state: { dadosFormulario: this.dadosFormulario } });
       this.presentToast('Matrícula realizada com sucesso!', 'success');
+
+      this.nome = '';
+      this.semestre = '';
+      this.temas.forEach(item => item.isChecked = false);
+
     }
 
   }
