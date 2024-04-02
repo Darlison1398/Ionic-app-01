@@ -1,12 +1,12 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar style="--background: #77f0e0">
     <ion-title>login</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
   <ion-card>
-    <ion-card-title>Login</ion-card-title>
+    <ion-card-title class="ion-text-center">Login</ion-card-title>
 
     <ion-item>
       <ion-label>Email:</ion-label>
@@ -18,7 +18,8 @@
       <ion-label>Senha:</ion-label>
       <ion-input type="password" [(ngModel)]="senha"></ion-input>
     </ion-item>
+    <br><br>
 
-    <ion-button expand="full" color="light" (click)="login()">Entrar</ion-button>
+    <ion-button expand="full" color="primary" (click)="login()">Entrar</ion-button>
   </ion-card>
 </ion-content>

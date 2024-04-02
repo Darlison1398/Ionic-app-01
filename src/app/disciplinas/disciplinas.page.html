@@ -1,14 +1,105 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar style="--background: #77f0e0">
     <ion-title>disciplinas</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="container">
-    <ion-button routerLink="/tela-inicial">Página inicial</ion-button><br>
+    <div style="text-align: end;">
+      <ion-button routerLink="/tela-inicial">Página inicial</ion-button>
+    </div><br><br>
 
-    <h3>Suas disciplinas</h3>
+    <h3>Aqui estão as disciplinas do 5° e do 6° semestre</h3>
+
+    <ion-card color="primary">
+      <ion-card-header>
+        <ion-card-title>Mobile</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="secondary">
+      <ion-card-header>
+        <ion-card-title>Web 1</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="tertiary">
+      <ion-card-header>
+        <ion-card-title>Web 2</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>Segurança da Informação</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="warning">
+      <ion-card-header>
+        <ion-card-title>Teste de software</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="danger">
+      <ion-card-header>
+        <ion-card-title>Servidores</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="light">
+      <ion-card-header>
+        <ion-card-title>Padrões de Projetos</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="medium">
+      <ion-card-header>
+        <ion-card-title>TCC</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card>
+    
+    <ion-card color="dark">
+      <ion-card-header>
+        <ion-card-title>Atividade de Extensão III</ion-card-title>
+        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content> Card Content </ion-card-content>
+    </ion-card><br><br><br>
+
+    <h4>
+      Acessa a área "cadastrar" e realize as matrículas nas matérias que você deve fazer no semestre correspondente.
+      Elas aparecerão automaticamente pra você assim que você digitar o semestre.
+    </h4><br>
+
+    <ion-button expand="full" color="primary" routerLink="/cadastro-disciplinas">Realizar matrículas</ion-button>
+
 
 
   </div>
