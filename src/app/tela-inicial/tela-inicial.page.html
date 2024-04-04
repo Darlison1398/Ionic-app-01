@@ -7,10 +7,21 @@
     </ion-toolbar>
   </ion-header>
   <ion-content class="ion-padding">
-    <ion-item>Home</ion-item>
-    <ion-item routerLink="/disciplinas">Matérias</ion-item>
-    <ion-item routerLink="/cadastro-disciplinas">Cadastrar</ion-item>
-    <ion-item routerLink="/perfil">Perfil</ion-item>
+
+    <ion-item>
+      <ion-icon name="home" slot="start"></ion-icon> Home
+    </ion-item>
+
+    <ion-item routerLink="/disciplinas">
+      <ion-icon name="book" slot="start"></ion-icon> Matérias
+    </ion-item>
+
+    <ion-item routerLink="/cadastro-disciplinas">
+      <ion-icon name="add-circle" slot="start"></ion-icon> Matricular
+    </ion-item>
+    <ion-item routerLink="/perfil">
+      <ion-icon name="person" slot="start"></ion-icon> Perfil
+    </ion-item>
   </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
